@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+<!--
+	Minimaxing by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Abhinit Sati</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+	</head>
+	<body>
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<div id="header-wrapper">
+					<div class="container">
+						<div class="row">
+							<div class="col-12">
+
+								<header id="header">
+									<h1><a href="../index.html" id="logo">Abhinit Sati</a></h1>
+									<nav id="nav">
+										<a href="index.html" class="current-page-item">Home</a>
+										<a href="https://github.com/Abhi2114?tab=repositories">Github</a>
+										<a href="https://www.linkedin.com/in/abhinit-sati-022866157/">Linkedin</a>
+									</nav>
+								</header>
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+			<!-- Main -->
+				<div id="main">
+					<div class="container">
+						<div class="row main-row">
+							<div class="col-12">
+
+								<section>
+									<h2>Path tracing with ShaderToy</h2>
+									<p> 
+                                        This path tracer is inspired by Cook's distributed ray tracing method. We simulate 
+                                        multiple bounces by writing an iterative version of the conventional ray tracing pipeline 
+                                        (since shaders don't support recursion). The radiance accumulated at each object hit is 
+                                        multiplied by an intensity value which keeps diminishing due to absorption, unless a specular
+                                        surface is encountered. Soft shadows, which is a (groundbreaking) feature of Cook's model can
+                                        also be produced. Caustics under refractive surfaces was a rather suprising effect which was
+                                        seen and they seem to converge very nicely as well as can be seen in the following pictures. And 
+                                        most importantly, all these pictures don't take more than a couple of minutes to converge. 
+                                    </p>
+
+                                    <img src="../images/realtime_shader/diffuse.png" style="width:800px;height:500px;padding-bottom: 40px">
+
+                                    <p>
+                                        Shiny rough surfaces and specular surfaces
+                                   </p>
+
+                                   <img src="../images/realtime_shader/shiny.png" style="width:800px;height:500px;padding-bottom: 40px">
+
+                                   <p>
+                                       Refractive surfaces and caustics
+                                   </p>
+
+                                   <img src="../images/realtime_shader/refr.png" style="width:800px;height:500px;padding-bottom: 40px">
+
+                                   <p>
+                                       Checkerboard flooring with the refractive index of the centre sphere dialed up
+                                   </p>
+                                
+                                   <img src="../images/realtime_shader/check.png" style="width:800px;height:500px;padding-bottom: 40px">
+
+								</section>
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
