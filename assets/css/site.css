@@ -304,6 +304,45 @@ p {
     transform: translateY(-1px);
 }
 
+/* ---- Page Content (Sub-pages) ---- */
+
+.page-content {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 2em 24px 4em;
+	background: #fff;
+	border-radius: 8px;
+	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+	margin-top: 2em;
+	margin-bottom: 2em;
+}
+
+.page-content h2 {
+	font-size: 2em;
+	font-weight: 700;
+	color: #1a2332;
+	letter-spacing: -0.5px;
+	margin-bottom: 0.8em;
+	padding-bottom: 0.4em;
+	border-bottom: 1px solid #eef0f2;
+}
+
+.page-content p {
+	font-size: 1.05em;
+	line-height: 1.8;
+	color: #4a5568;
+	margin-bottom: 1.5em;
+}
+
+.page-image {
+	display: block;
+	max-width: 100%;
+	height: auto;
+	border-radius: 8px;
+	margin: 2em auto;
+	box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
 /* ---- Projects Section ---- */
 
 .projects-section {

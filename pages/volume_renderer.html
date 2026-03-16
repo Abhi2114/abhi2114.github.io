@@ -1,107 +1,83 @@
-<!DOCTYPE HTML>
-<!--
-	Minimaxing by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Abhinit Sati</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="../assets/css/main.css" />
-	</head>
-	<body>
-		<div id="page-wrapper">
+<!DOCTYPE html>
+<html lang="en">
 
-			<!-- Header -->
-				<div id="header-wrapper">
-					<div class="container">
-						<div class="row">
-							<div class="col-12">
+<head>
+	<title>Volumetric Renderer - Abhinit Sati</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="../assets/css/site.css" />
+</head>
 
-								<header id="header">
-									<h1><a href="../index.html" id="logo">Abhinit Sati</a></h1>
-									<nav id="nav">
-										<a href="index.html" class="current-page-item">Home</a>
-										<a href="https://github.com/Abhi2114?tab=repositories">Github</a>
-										<a href="https://www.linkedin.com/in/abhinit-sati-022866157/">Linkedin</a>
-									</nav>
-								</header>
+<body>
 
-							</div>
-						</div>
-					</div>
-				</div>
+	<!-- Header -->
+	<header class="site-header">
+		<div class="site-container">
+			<div class="site-name"><a href="../index.html">Abhinit Sati</a></div>
+			<nav class="site-nav">
+				<a href="../index.html">Home</a>
+				<a href="https://github.com/Abhi2114?tab=repositories" target="_blank">Github</a>
+				<a href="https://www.linkedin.com/in/abhinit-sati-022866157/" target="_blank">LinkedIn</a>
+				<a href="../media/CV.pdf" target="_blank">CV</a>
+			</nav>
+		</div>
+	</header>
 
-			<!-- Main -->
-				<div id="main">
-					<div class="container">
-						<div class="row main-row">
-							<div class="col-12">
+	<!-- Main -->
+	<main class="content-section">
+		<div class="site-container page-content">
+			<h2>Volumetric Renderer</h2>
+			
+			<p>
+				The following picture shows implicit functions of a sphere and torus being stamped onto
+				a voxel grid. The ray marcher that renders these shapes was written from scratch in C++, 
+				and is displayed to the screen with OpenGL. 
+			</p>
 
-								<section>
-									<h2>Volumetric Renderer</h2>
-									<p> The following picture shows implicit functions of a sphere and torus being stamped onto
-                                        a voxel grid. The ray marcher that renders these shapes was written from scratch in C++, 
-                                        and is displayed to the screen with OpenGL. 
-                                    </p>
+			<img src="../images/volume/torus_sphere.PNG" alt="Implicit functions of a sphere and torus" class="page-image">
+			
+			<p>
+				A humanoid figure rendered using implicit shapes (spheres, torus, icosahedron, ellipsoids, 
+				cubes, cones, etc.)
+			</p>
 
-                                    <img src="../images/volume/torus_sphere.PNG" style="width:700px;height:600px;padding-bottom: 40px">
+			<img src="../images/volume/humanoid.PNG" alt="Humanoid figure rendered using implicit shapes" class="page-image">
 
-                                    &nbsp;
+			<p>
+				Adding point lights for cool shadow effects and rendering arbitrary shapes (level sets)
+				with the Fast Marching Method technique.
+			</p>
 
-									<p>
-                                        A humanoid figure rendered using implicit shapes (spheres, torus, icosahedron, ellipsoids, 
-                                        cubes, cones, etc.)
-                                    </p>
+			<img src="../images/volume/level_set.PNG" alt="Level sets with Fast Marching Method" class="page-image">
 
-                                    <img src="../images/volume/humanoid.PNG" style="width:700px;height:600px;padding-bottom: 40px">
+			<p>
+				Pyroclastic spheres using Fractal Sum Perlin Noise
+			</p>
 
-                                    &nbsp;
+			<img src="../images/volume/pyroclastic.PNG" alt="Pyroclastic spheres" class="page-image">
 
-									<p>
-                                        Adding point lights for cool shadow effects and rendering arbitrary shapes (level sets)
-                                        with the Fast Marching Method technique.
-                                    </p>
+			<p>
+				Wisps    
+			</p>
 
-                                    <img src="../images/volume/level_set.PNG" style="width:700px;height:600px;padding-bottom: 40px">
+			<img src="../images/volume/wisp.PNG" alt="Wisps rendering" class="page-image">
 
-                                    &nbsp;
+			<p>
+				Noise stamping on voxel grids
+			</p>
 
-                                    <p>
-                                        Pyroclastic spheres using Fractal Sum Perlin Noise
-                                    </p>
-
-                                    <img src="../images/volume/pyroclastic.PNG" style="width:700px;height:600px;padding-bottom: 40px">
-
-                                    <p>
-                                        Wisps    
-                                    </p>
-
-                                    <img src="../images/volume/wisp.PNG" style="width:700px;height:600px;padding-bottom: 40px">
-
-                                    <p>
-                                        Noise stamping on voxel grids
-                                    </p>
-
-                                    <img src="../images/volume/noise_stamp.PNG" style="width:700px;height:600px;padding-bottom: 40px">
-
-								</section>
-
-							</div>
-						</div>
-					</div>
-				</div>
+			<img src="../images/volume/noise_stamp.PNG" alt="Noise stamping" class="page-image">
 
 		</div>
+	</main>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+	<!-- Footer -->
+	<footer class="site-footer">
+		<div class="site-container">
+			<p>&copy; 2026 Abhinit Sati</p>
+		</div>
+	</footer>
 
-	</body>
+</body>
+
 </html>
